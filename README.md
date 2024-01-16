@@ -40,11 +40,11 @@ volumes:
 
 ## Usage
 
-> run docker compose with `docker compose up -d`
+> [!NOTE]run docker compose with `docker compose up -d`
 
-> restore database in the container with `docker exec dbtest /bin/bash db_restore.sh`
+> [!IMPORTANT]restore database in the container with `docker exec dbtest /bin/bash db_restore.sh`
 
->[!WARMING]
+>[!WARNING]
 > You need to create backup folder for your .bak files
 
 > [!TIP] 
