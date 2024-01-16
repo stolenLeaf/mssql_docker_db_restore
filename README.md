@@ -1,19 +1,5 @@
 # Docker MS SQL DB restoring
 
->[!NOTE]
-> You need to create backup folder for your .bak files
-
->[!NOTE]
-> The DB use the default username `sa`
-
->[!IMPORTANT]
-> To add a connection to the app use `localhost` url 
-
->[!IMPORTANT]
-> You need to choose a `MSSQL_SA_PASSWORD`. This password needs to include at least 8 characters of at least three of these four categories: 
-> U ppercase letters, lowercase letters, numbers and non-alphanumeric symbols.
-
-
 ## Config
 
 ### Proyect tree
@@ -58,5 +44,18 @@ volumes:
 
 > restore database in the container with `docker exec dbtest /bin/bash db_restore.sh`
 
+>[!WARMING]
+> You need to create backup folder for your .bak files
+
 > [!TIP] 
 > You can put multiple .bak files in the `backup` directory
+
+>[!NOTE]
+> The DB use the default username `sa`
+
+>[!IMPORTANT]
+> To add a connection to the app use `localhost` url 
+
+>[!IMPORTANT]
+> You need to choose a `MSSQL_SA_PASSWORD`. This password needs to include at least 8 characters of at least three of these four categories: 
+> Uppercase letters, lowercase letters, numbers and non-alphanumeric symbols.
